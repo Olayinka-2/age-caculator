@@ -90,7 +90,7 @@ function validateDate(dateValues) {
   let currentMonth = new Date().getMonth();
   let currentDay = new Date().getDate();
 
-  if(!(year - currentYear) > 0) {
+  if(year > currentYear) {
     input.forEach(input => {
       input.style.border = '1px solid red';
       document.querySelector(".year-error").textContent = 'must be a valid past'
