@@ -104,6 +104,13 @@ body {
   font-weight: bolder;
 }
 
+.error {
+  color: red;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
 @media screen and (min-width: 580px) {
   .arrow-div {
     position: absolute;

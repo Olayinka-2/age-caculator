@@ -27,14 +27,17 @@
           <div class="inputs">
             <label for="day">DAY</label>
             <input type="number" placeholder="DD" id="day" min="1" max="31">
+            <div class="day-error error"></div>
           </div>
           <div class="inputs">
             <label for="month">MONTH</label>
             <input type="number" placeholder="MM" min="1" max='12' id="month">
+            <div class="month-error error"></div>
           </div>
           <div class="inputs">
             <label for="year">YEAR</label>
             <input type="number" placeholder="YYYY" min="1" max="2100" id="year">
+            <div class="year-error error"></div>
           </div>
           <button type="submit" class="arrow-div">
             <img src="./assets/images/icon-arrow.svg" alt="icon-arrow">
@@ -43,7 +46,7 @@
         </div>
       </form>
       <div class="age-display">
-        <h1><span id="span-years">--</span> Years</h1>
+        <h1><span id="span-year">--</span> Years</h1>
         <h1><span id="span-month">--</span> months</h1>
         <h1><span id="span-day">--</span> days</h1>
       </div>
