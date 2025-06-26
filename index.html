@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,21 +20,32 @@
 </head>
 <body>
 
-  Day
-  DD
+  <div class="age-container">
+    <div class="innerContainer">
+      <div class="age-inputs">
+        <div class="inputs">
+          <label for="day">DAY</label>
+          <input type="number" placeholder="DD">
+        </div>
+        <div class="inputs">
+          <label for="day">MONTH</label>
+          <input type="number" placeholder="MM" min="1" max="31">
+        </div>
+        <div class="inputs">
+          <label for="day">YEAR</label>
+          <input type="number" placeholder="YYYY" min="1" max="12">
+        </div>
+      </div>
+      <div class="age-display">
+        <p><span>--</span> Years</p>
+        <p><span>--</span> months</p>
+        <p><span>--</span> days</p>
+      </div>
+    </div>
+  </div>
 
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
