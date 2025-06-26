@@ -35,11 +35,12 @@ body {
 
 .innerContainer {
   background: var(--white);
-  padding: 2rem;
-  border-radius: 2rem;
-  border-bottom-right-radius: 10rem;
+  padding:3rem  2rem;
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 8rem;
   width: 100%;
   overflow: hidden;
+  max-width: 60rem;
 }
 
 .age-inputs {
@@ -48,7 +49,7 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--Grey500);
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .age-inputs label {
@@ -71,3 +72,47 @@ body {
   border: 1px solid var(--Grey500);
 }
 
+.age-display {
+  font-weight: 800;
+  color: var(--Black);
+  padding: 5rem 0 2rem;
+  font-style: italic;
+  border-top: .1rem solid var(--Grey200);
+  position: relative;
+}
+
+.arrow-div {
+  background: var(--purple);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.5rem;
+  left: 42.5%;
+  font-style: 3.5rem;
+  font-weight: bold;
+}
+
+.arrow-div img {
+  width: 100%;
+  padding: 1rem;
+}
+.age-display span {
+  color: var(--purple);
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 580px) {
+  .arrow-div {
+    position: absolute;
+    top: -3.5rem;
+    left: 100% ;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .innerContainer {
+    padding: 5rem 10rem 5rem 5rem;
+    border-bottom-right-radius: 10rem;
+  }
+}
