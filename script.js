@@ -29,10 +29,8 @@ function displayDate(event) {
   inputs.year = parseInt(inputs.year);
   let outputData;
   if(!validateDate(inputs)) {
-    console.log(validateDate(inputs))
     return;
   }
-  console.log(validateDate(inputs))
 
   outputData = calculateAndReturn(inputs);
   const spans = document.querySelectorAll("span");
@@ -58,7 +56,6 @@ function calculateAndReturn(dateValues) {
   let yearDiff = currentYear - year;
   let monthDiff = currentMonth - month;
   let dayDiff = currentDay - day;
-  console.log(yearDiff)
 
   if(monthDiff < 0) {
     monthDiff += 12
@@ -93,7 +90,7 @@ function validateDate(dateValues) {
   let currentMonth = new Date().getMonth();
   let currentDay = new Date().getDate();
 
-  if(year > currentYear) {
+  if(!(year - currentYear) > 0) {
     input.forEach(input => {
       input.style.border = '1px solid red';
       document.querySelector(".year-error").textContent = 'must be a valid past'
