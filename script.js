@@ -61,6 +61,10 @@ function calculateAndReturn(dateValues) {
     monthDiff += 12
   }
 
+  if(currentMonth < month || currentDay < day) {
+    yearDiff -= 1;
+  }
+
   if(dayDiff < 0 && monthDiff !== 2) {
     dayDiff += 31;
   }
